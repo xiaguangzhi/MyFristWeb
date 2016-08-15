@@ -1,0 +1,281 @@
+/*--login start here--*/
+body {
+	background: url(../images/back.jpg) no-repeat;
+	background-size:100%;
+	padding: 100px 0px 30px 0px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+}
+
+.register {
+	width: 32%;
+	margin: 0 auto;
+}
+
+.register h2 {
+	font-size: 50px;
+	font-weight: 700;
+	color: #FFFF;
+	text-align: center;
+	margin: 0px 0px 50px 0px;
+	font-family: 'Droid Serif', serif;
+}
+
+.reg-top {
+	background: #E1E1E1;
+	border-radius: 25px 25px 25px 25px;
+	-webkit-border-radius: 25px 25px 25px 25px;
+	-moz-border-radius: 25px 25px 25px 25px;
+	-o-border-radius: 25px 25px 25px 25px;
+	padding: 20px 60px;
+}
+
+.reg-top h1 {
+	text-align: center;
+	font-size: 27px;
+	font-weight: 500;
+	color: #F45B4B;
+	margin: 0px 0px 20px 0px;
+}
+
+.reg-top a {
+	text-align: right;
+	color: #F45B4B;
+	margin: 0px 0px 0px 0px;
+	text-decoration: none;
+}
+
+.reg-top input[type="text"] {
+	outline: none;
+	font-size: 15px;
+	font-weight: 500;
+	color: #818181;
+	padding: 15px 20px;
+	background: #CACACA;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-o-border-radius: 25px;
+	margin: 0px 0px 12px 0px;
+	width: 88%;
+	-webkit-appearance: none;
+}
+
+.reg-top input[type="tel"] {
+	outline: none;
+	font-size: 15px;
+	font-weight: 500;
+	color: #818181;
+	padding: 15px 20px;
+	background: #CACACA;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-o-border-radius: 25px;
+	margin: 0px 0px 12px 0px;
+	width: 88%;
+	-webkit-appearance: none;
+}
+
+.reg-top input[type="email"] {
+	outline: none;
+	font-size: 15px;
+	font-weight: 500;
+	color: #818181;
+	padding: 15px 20px;
+	background: #CACACA;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-o-border-radius: 25px;
+	margin: 0px 0px 12px 0px;
+	width: 88%;
+	-webkit-appearance: none;
+}
+
+.reg-top input[type="password"] {
+	outline: none;
+	font-size: 15px;
+	font-weight: 500;
+	color: #818181;
+	padding: 15px 20px;
+	background: #CACACA;
+	border: 1px solid #ccc;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	-o-border-radius: 25px;
+	margin: 0px 0px 12px 0px;
+	width: 88%;
+	-webkit-appearance: none;
+}
+
+.sub input[type="submit"] {
+	background: #F45B4B;
+	color: #FFF;
+	font-size: 17px;
+	font-weight: 400;
+	padding: 8px 7px;
+	width: 40%;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 6px;
+	-webkit-border-radius: 19px;
+	-moz-border-radius: 6px;
+	-o-border-radius: 6px;
+	margin: 0px 7px 0px 3px;
+	outline: none;
+	border: none;
+}
+
+.sub input[type="submit"]:hover {
+	background: #818181;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+}
+
+.sub {
+	text-align: center;
+}
+
+.login-bottom h3 {
+	font-size: 14px;
+	font-weight: 500;
+	color: #fff;
+}
+
+@media ( max-width :1440px) {
+	.reg {
+		width: 35%;
+	}
+}
+
+@media ( max-width :1366px) {
+	.reg {
+		width: 37%;
+	}
+}
+
+@media ( max-width :1280px) {
+	.reg {
+		width: 40%;
+	}
+}
+
+@media ( max-width :1024px) {
+	.reg {
+		width: 48%;
+	}
+}
+
+@media ( max-width :768px) {
+	.reg {
+		width: 65%;
+	}
+	.reg-top h1 {
+		font-size: 25px;
+	}
+	body {
+		padding: 100px 0px 0px 0px;
+	}
+	.reg h2 {
+		font-size: 28px;
+	}
+}
+
+@media ( max-width :640px) {
+	.reg-top h1 {
+		font-size: 23px;
+	}
+	.sub input[type="submit"] {
+		font-size: 15px;
+		width: 22%;
+	}
+	.reg-top input[type="text"] {
+		padding: 12px 20px;
+	}
+	.reg-top input[type="password"] {
+		padding: 12px 20px;
+	}
+	.reg-top input[type="tel"] {
+		padding: 12px 20px;
+	}
+	.reg-top input[type="email"] {
+		padding: 12px 20px;
+	}
+	body {
+		padding: 110px 0px 0px 0px;
+	}
+}
+
+@media ( max-width :480px) {
+	.reg {
+		width: 80%;
+	}
+	.reg-top h1 {
+		font-size: 21px;
+	}
+	.login-top input[type="text"] {
+		width: 85%;
+	}
+	.reg-top {
+		padding: 30px 40px;
+	}
+	.reg-top input[type="password"] {
+		width: 85%;
+	}
+	.reg h2 {
+		font-size: 25px;
+	}
+}
+
+@media ( max-width :320px) {
+	.reg {
+		width: 90%;
+	}
+	.reg-top {
+		padding: 20px 25px;
+	}
+	.reg-top input[type="text"] {
+		width: 81%;
+		padding: 10px 20px;
+		font-size: 13px;
+		margin: 0px 0px 7px 0px;
+	}
+	.reg-top input[type="password"] {
+		width: 81%;
+		padding: 10px 20px;
+		font-size: 13px;
+		margin: 0px 0px 7px 0px;
+	}
+	.reg-top input[type="tel"] {
+		width: 81%;
+		padding: 10px 20px;
+		font-size: 13px;
+		margin: 0px 0px 7px 0px;
+	}
+	.reg-top input[type="email"] {
+		width: 81%;
+		padding: 10px 20px;
+		font-size: 13px;
+		margin: 0px 0px 7px 0px;
+	}
+	.sub input[type="submit"] {
+		font-size: 11px;
+		width: 25%;
+		padding: 6px 7px;
+	}
+	body {
+		padding: 50px 0px 0px 0px;
+	}
+	.reg h2 {
+		font-size: 23px;
+		margin: 0px 0px 35px 0px;
+	}
+}
+/*--meadia quiries end here--*/
