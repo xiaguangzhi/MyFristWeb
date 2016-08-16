@@ -13,7 +13,7 @@
 		<h2>X X 商 城</h2>
 
 		<div class="reg-top">
-			<a href="home.html"><h3>回到首页</h3></a>
+			<a href="#"><h3>回到首页</h3></a>
 			<h1>注册</h1>
 
 			<form action=" /MyFristWeb/register.do" method="post">

@@ -1,0 +1,19 @@
+body{
+
+	background-color: #ff8040;
+	text-align: center;
+	
+	overflow: hidden;
+	
+}
+h1{
+	text-align: center;
+	font-size:50px;
+	display:inline;
+}
+a{
+	float: right;
+	border: 50px,50px;
+	
+	
+}
