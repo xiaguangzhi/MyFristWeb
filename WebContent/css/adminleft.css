@@ -55,7 +55,7 @@ table {
 	top: 0;
 	height: 100%;
 	width: 250px;
-	background-color: #f7f7f7;
+	background-color: #75b5e3;
 	font-family: "Montserrat", sans-serif;
 	padding-top: 20px;
 	font-size: 12px;
@@ -75,7 +75,7 @@ table {
 	padding: 10px;
 	text-decoration: none;
 	text-transform: uppercase;
-	color: black;
+	color: #000040;
 }
 
 .dropdown li>ul li {
@@ -83,7 +83,7 @@ table {
 }
 
 .dropdown li>ul li a {
-	color: gray;
+	color:gray;
 }
 
 .dropdown li>ul li>ul li {

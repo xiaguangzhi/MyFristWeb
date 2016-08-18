@@ -11,7 +11,7 @@
 <h1>XX店铺管理系统</h1>
 
 <a href="#" target="show">修改账户信息</a>
-<a href="http://www.baidu.com" target="_parent" >店铺首页&nbsp;&nbsp;</a>
+<a href="../index.jsp" target="_parent" >店铺首页&nbsp;&nbsp;</a>
 
 </body>
 </html>

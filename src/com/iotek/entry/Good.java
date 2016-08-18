@@ -15,6 +15,14 @@ public class Good implements Serializable{
 	public Good() {
 		
 	}
+	
+	public Good(String gname, BigDecimal gprice, String goodtype) {
+		super();
+		this.gname = gname;
+		this.gprice = gprice;
+		this.goodtype = goodtype;
+	}
+
 	public Good(int id, String gname, BigDecimal gprice, String goodtype) {
 		super();
 		this.id = id;

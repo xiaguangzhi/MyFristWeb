@@ -13,7 +13,7 @@
 		<h2>X X 商 城</h2>
 
 		<div class="login-top">
-			<a href="adminhome.jsp"><h3>回到首页</h3></a>
+			<a href="../index.jsp"><h3>回到首页</h3></a>
 			<h1>登录</h1>
 
 			<form action="/MyFristWeb/login.do" method="post">

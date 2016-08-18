@@ -1,0 +1,136 @@
+body {
+	background: url(../images/back.jpg);
+	background-size: 100%;
+	padding: 0px 20px 30px 20px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+}
+
+.index-top {
+	float: left;
+}
+
+.index-top-my {
+	float: right;
+}
+
+section {
+	padding-bottom: 15px;
+	display: block;
+}
+
+hr {
+	color: #c0c0c0;
+}
+
+.index-top-search {
+	width: 100%;
+	height: 100px;
+	background-color: #808080AA;
+	padding-bottom: 10px;
+}
+
+.index-top-img {
+	text-align: center;
+	width: 20%;
+	float: left;
+	height: 100%;
+	/* background:url(../images/topsearch.png); */
+}
+
+.index-top-img img {
+	width: 100%;
+}
+
+.index-search {
+	padding-top: 20px;
+	width: 60%;
+	text-align: center;
+	height: 100%;
+	float: left;
+}
+
+.index-search input[type="submit"] {
+	background: #fdce53;
+	color: #FFF;
+	font-size: 15px;
+	font-weight: 500;
+	padding: 15px 20px;
+	width: 10%;
+	display: inline-block;
+	margin: 0px 0px 12px 0px;
+	cursor: pointer;
+	/* border-radius: 6px;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin: 0px 7px 0px 3px; */
+	outline: none;
+	border: none;
+}
+
+.index-search input[type="text"] {
+	outline: none;
+	font-size: 17px;
+	font-weight: 500;
+	color: #000040;
+	padding: 15px 20px;
+	background: #ffffddAA;
+	border: 1px solid #ccc;
+	margin: 0px 0px 12px 0px;
+	width: 50%;
+	-webkit-appearance: none;
+}
+
+.index-cart {
+	float: left;
+	padding-top: 20px;
+	padding-left: 90px;
+}
+
+.goods {
+	width: 1800px;
+	height: 1200px;
+	background-color: #ffffffaa;
+	display: block;
+	padding-left: 20px;
+}
+
+.goodbar {
+	width: 10%;
+	min-height:400px;
+	margin-top:40px;
+	padding-left:20px;
+	padding-right:20px;
+	background-color: #c0c0c0aa;
+	float: right;
+}
+
+
+.goods_info {
+	padding-left:40px;
+	padding-right:40px;
+	width: 80%;
+	height: 100%;
+	display: block;
+	
+}
+.goods_info_item{
+	width: 20%;
+	height: 33%;
+	float: left;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+}
+.goods_info_item img{
+	width: 100%;
+	height:70%;
+}
+
+a{
+	color: #ff8000;
+	font-size: 15px;
+	font-weight: bold;
+}

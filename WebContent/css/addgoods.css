@@ -1,0 +1,49 @@
+body {
+	background-size: 100%;
+	padding: 100px 0px 30px 0px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+}
+
+.add {
+	background-color: rgba(228, 219, 206, 0.21);
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.add h2 {
+	text-align: center;
+		padding-top: 20px
+}
+.add-center{
+	padding-top: 20px;
+
+}
+.add-center input[type="submit"] {
+  background: #F45B4B;
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 400;
+  padding: 8px 7px;
+  width: 20%;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 6px;
+  -webkit-border-radius: 19px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  margin: 0px 7px 0px 3px;
+  outline: none;
+  border: none;
+}
+
+table {
+	text-align:left;
+	width: 100%;
+}
+
+td {
+	padding-left:50px;
+	padding-bottom: 10px;
+}

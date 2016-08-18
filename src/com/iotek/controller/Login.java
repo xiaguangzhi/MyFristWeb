@@ -54,7 +54,7 @@ public class Login extends HttpServlet {
 		if (user!=null) {
 			
 			session.setAttribute("user", user);
-			request.getRequestDispatcher("pages/loginSuccess.jsp").forward(request,response);
+			request.getRequestDispatcher("index.jsp").forward(request,response);
 			
 		}else {
 			response.getWriter().print("<script language='javascript'>alert('用户名或密码错误');window.location.href='pages/userLogin.jsp';</script>");   

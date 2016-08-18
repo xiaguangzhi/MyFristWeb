@@ -62,9 +62,9 @@ public class ShowGoods extends HttpServlet {
 		//	查询指定数量的商品显示在页面
 		List<Good> nowGood = goodbiz.selectNowGood(currentpage, totalRow, defaultRow);
 		/*List<Good> nowGood=goodbiz.allGood();*/
-		for (Good good : nowGood) {
+		/*for (Good good : nowGood) {
 			System.out.println(good);
-		}
+		}*/
 		
 		HttpSession session = request.getSession();
 		session.setAttribute("goodList", nowGood);

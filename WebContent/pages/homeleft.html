@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>管理员导航页</title>
+<link rel="stylesheet" href="/MyFristWeb/css/adminleft.css">
+</head>
+<body style="height: 600px;">
+	<ul class="dropdown">
+		<li><a href="#">手机</a>
+			<ul>
+				<li><a href="#" target="show">苹果手机</a></li>
+				<li><a href="#" target="show">安卓手机</a></li>
+			</ul></li>
+		<li><a href="#">智能家居</a>
+			<ul>
+				<li><a href="#">手环</a></li>
+				<li><a href="#">路由器</a></li>
+				<li><a href="#">其他</a></li>
+			</ul></li>
+		<li><a href="#">其他商品</a></li>
+	
+	</ul>
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="/MyFristWeb/js/tendina.js"></script>
+	<script>
+		$('.dropdown').tendina({
+			animate : true,
+			speed : 500,
+			openCallback : function($clickedEl) {
+				console.log($clickedEl);
+			},
+			closeCallback : function($clickedEl) {
+				console.log($clickedEl);
+			}
+		})
+	</script>
+</body>
+</html>
