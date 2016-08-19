@@ -1,4 +1,7 @@
 package com.iotek.dao;
+/**
+ * @author xiaohuang
+ */
 
 import java.util.List;
 
@@ -15,6 +18,7 @@ public interface GoodDao {
 	public  List<Good> selectNowGood(int currentpage, int totalRow,
 			int defaultRow);
 	public List<GoodInfo> selectGoodInfo();
+	public GoodInfo selectGoodInfo(int goodid);
 	
 
 }

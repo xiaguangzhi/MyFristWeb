@@ -1,4 +1,7 @@
 package com.iotek.controller;
+/**
+ * @author xiaohuang
+ */
 
 import java.io.IOException;
 
@@ -7,6 +10,11 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.iotek.biz.GoodBiz;
+import com.iotek.bizimpl.GoodBizImpl;
+import com.iotek.entry.GoodInfo;
 
 /**
  * Servlet implementation class GoodInfoServlet
@@ -31,7 +39,11 @@ public class GoodInfoServlet extends HttpServlet {
 		response.setCharacterEncoding("UTF-8");
 		response.setContentType("text/html;charset=UTF-8");
 		String	id= request.getParameter("goodid");
-		System.out.println(id);
+		GoodBiz goodBiz=new GoodBizImpl();
+		GoodInfo itemgoodInfo = goodBiz.selectGoodInfo(Integer.parseInt(id));
+		HttpSession session = request.getSession();
+		session.setAttribute("itemgoodInfo", itemgoodInfo);
+		request.getRequestDispatcher("pages/goodsinfo.jsp").forward(request,response);
 	}
 
 	/**

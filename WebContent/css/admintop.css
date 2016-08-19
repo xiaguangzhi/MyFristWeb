@@ -1,19 +1,21 @@
-body{
-
-	background-color: #ff8040;
+body {
+	background: url(../images/back.jpg);
 	text-align: center;
-	
 	overflow: hidden;
-	
 }
-h1{
+
+h1 {
 	text-align: center;
-	font-size:50px;
-	display:inline;
+	font-size: 50px;
+	display: inline;
+	color: white;
 }
-a{
+
+a {
 	float: right;
-	border: 50px,50px;
-	
-	
+	border: 50px, 50px;
+	font-size: 25px;
+	font-weight: 500;
+	font-weight: bold;
+	color: white;
 }

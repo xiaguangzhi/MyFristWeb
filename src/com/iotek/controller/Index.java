@@ -1,4 +1,7 @@
 package com.iotek.controller;
+/**
+ * @author xiaohuang
+ */
 
 import java.io.IOException;
 import java.util.List;
@@ -40,7 +43,7 @@ public class Index extends HttpServlet {
 		GoodBiz goodBiz=new GoodBizImpl();
 		List<GoodInfo> goodInfoList = goodBiz.selectGoodInfo();
 		session.setAttribute("goodInfoList",goodInfoList);
-		System.out.println(goodInfoList);
+//		System.out.println(goodInfoList);
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 		
 	}

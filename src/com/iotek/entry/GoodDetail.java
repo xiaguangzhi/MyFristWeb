@@ -121,6 +121,63 @@ public class GoodDetail {
 
 
 	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((caption == null) ? 0 : caption.hashCode());
+		result = prime * result + gid;
+		result = prime * result + id;
+		result = prime * result + ((image1 == null) ? 0 : image1.hashCode());
+		result = prime * result + ((image2 == null) ? 0 : image2.hashCode());
+		result = prime * result + ((image3 == null) ? 0 : image3.hashCode());
+		result = prime * result + ((image4 == null) ? 0 : image4.hashCode());
+		return result;
+	}
+
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		GoodDetail other = (GoodDetail) obj;
+		if (caption == null) {
+			if (other.caption != null)
+				return false;
+		} else if (!caption.equals(other.caption))
+			return false;
+		if (gid != other.gid)
+			return false;
+		if (id != other.id)
+			return false;
+		if (image1 == null) {
+			if (other.image1 != null)
+				return false;
+		} else if (!image1.equals(other.image1))
+			return false;
+		if (image2 == null) {
+			if (other.image2 != null)
+				return false;
+		} else if (!image2.equals(other.image2))
+			return false;
+		if (image3 == null) {
+			if (other.image3 != null)
+				return false;
+		} else if (!image3.equals(other.image3))
+			return false;
+		if (image4 == null) {
+			if (other.image4 != null)
+				return false;
+		} else if (!image4.equals(other.image4))
+			return false;
+		return true;
+	}
+
+
+	@Override
 	public String toString() {
 		return "GoodDetail [id=" + id + ", gid=" + gid + ", image1=" + image1
 				+ ", image2=" + image2 + ", image3=" + image3 + ", image4="

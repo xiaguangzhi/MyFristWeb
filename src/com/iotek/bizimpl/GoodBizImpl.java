@@ -1,4 +1,7 @@
 package com.iotek.bizimpl;
+/**
+ * @author xiaohuang
+ */
 
 import java.util.ArrayList;
 import java.util.List;
@@ -81,6 +84,12 @@ public class GoodBizImpl implements GoodBiz {
 
 		}
 		return list;
+	}
+
+	@Override
+	public GoodInfo selectGoodInfo(int id) {
+		
+		return goodDao.selectGoodInfo(id);
 	}
 
 }

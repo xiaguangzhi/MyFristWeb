@@ -24,6 +24,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup,
 
 body {
 	line-height: 1;
+	background: url(../images/back.png);
 }
 
 ol, ul {
@@ -47,7 +48,9 @@ table {
 * {
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
-} */
+}
+
+* /
 
 .dropdown {
 	position: absolute;
@@ -83,9 +86,11 @@ table {
 }
 
 .dropdown li>ul li a {
-	color:gray;
+	color: gray;
 }
-
+a{
+	font-size: 20px;
+}
 .dropdown li>ul li>ul li {
 	padding: 10px 30px;
 }

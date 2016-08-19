@@ -124,4 +124,23 @@ public class GoodDaoImpl extends BaseDao implements GoodDao {
 		return null;
 	}
 
+	@Override
+	public GoodInfo selectGoodInfo(int goodid) {
+			String sql="select g.id,g.gname,g.gprice,g.goodtype,gd.image1,gd.image2,gd.image3,gd.image4,gd.caption from good g, "
+					+ "gooddetail gd where g.id=? and g.id=gd.gid";
+			List<Object> params = new ArrayList<Object>();
+			params.add(goodid);
+			List<GoodInfo> list = new ArrayList<GoodInfo>();
+			try {
+				list = operQuery(sql, params, GoodInfo.class);
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			if (list.size()>0) {
+				return list.get(0);
+			}
+			return null;
+	}
+
 }

@@ -4,6 +4,10 @@ import java.io.Serializable;
 import java.math.BigDecimal;
 
 public class GoodInfo implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private String gname;
 	private BigDecimal gprice;
@@ -83,6 +87,76 @@ public class GoodInfo implements Serializable{
 	}
 	public void setCaption(String caption) {
 		this.caption = caption;
+	}
+	
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((caption == null) ? 0 : caption.hashCode());
+		result = prime * result + ((gname == null) ? 0 : gname.hashCode());
+		result = prime * result
+				+ ((goodtype == null) ? 0 : goodtype.hashCode());
+		result = prime * result + ((gprice == null) ? 0 : gprice.hashCode());
+		result = prime * result + id;
+		result = prime * result + ((image1 == null) ? 0 : image1.hashCode());
+		result = prime * result + ((image2 == null) ? 0 : image2.hashCode());
+		result = prime * result + ((image3 == null) ? 0 : image3.hashCode());
+		result = prime * result + ((image4 == null) ? 0 : image4.hashCode());
+		return result;
+	}
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		GoodInfo other = (GoodInfo) obj;
+		if (caption == null) {
+			if (other.caption != null)
+				return false;
+		} else if (!caption.equals(other.caption))
+			return false;
+		if (gname == null) {
+			if (other.gname != null)
+				return false;
+		} else if (!gname.equals(other.gname))
+			return false;
+		if (goodtype == null) {
+			if (other.goodtype != null)
+				return false;
+		} else if (!goodtype.equals(other.goodtype))
+			return false;
+		if (gprice == null) {
+			if (other.gprice != null)
+				return false;
+		} else if (!gprice.equals(other.gprice))
+			return false;
+		if (id != other.id)
+			return false;
+		if (image1 == null) {
+			if (other.image1 != null)
+				return false;
+		} else if (!image1.equals(other.image1))
+			return false;
+		if (image2 == null) {
+			if (other.image2 != null)
+				return false;
+		} else if (!image2.equals(other.image2))
+			return false;
+		if (image3 == null) {
+			if (other.image3 != null)
+				return false;
+		} else if (!image3.equals(other.image3))
+			return false;
+		if (image4 == null) {
+			if (other.image4 != null)
+				return false;
+		} else if (!image4.equals(other.image4))
+			return false;
+		return true;
 	}
 	@Override
 	public String toString() {

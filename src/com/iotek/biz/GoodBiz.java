@@ -1,4 +1,7 @@
 package com.iotek.biz;
+/**
+ * @author xiaohuang
+ */
 
 import java.util.List;
 
@@ -18,9 +21,10 @@ public interface GoodBiz {
 	public int nowRow(int currentpage,int totalPage,int totalRow,int defaultRow);
 	//查询当前页显示的商品信息
 	public List<Good> selectNowGood(int currentpage,int totalRow,int defaultRow);
-	//查询商品详情
+	//查询12个商品详情
 	public List<GoodInfo> selectGoodInfo();
 	
-	
+	//通过商品id查询商品的详细信息
+	public GoodInfo selectGoodInfo(int id);
 
 }
