@@ -9,12 +9,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%
-	List<Order> list=(List)session.getAttribute("order");
-	for(int i=0; i<list.size();i++){
-		out.println(list.get(0).toString());
-	}
-	
-	%>
+	<%out.print(session.getAttribute("order").toString()); %>
 </body>
 </html>

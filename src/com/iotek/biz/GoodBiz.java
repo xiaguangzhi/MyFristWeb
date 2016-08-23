@@ -23,7 +23,7 @@ public interface GoodBiz {
 	public List<Good> selectNowGood(int currentpage,int totalRow,int defaultRow);
 	//查询12个商品详情
 	public List<GoodInfo> selectGoodInfo();
-	
+	public Good selectGood(int id);
 	//通过商品id查询商品的详细信息
 	public GoodInfo selectGoodInfo(int id);
 

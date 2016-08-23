@@ -19,6 +19,7 @@ public interface GoodDao {
 			int defaultRow);
 	public List<GoodInfo> selectGoodInfo();
 	public GoodInfo selectGoodInfo(int goodid);
+	public Good selectGoods(int id);
 	
 
 }

@@ -17,6 +17,13 @@ public class Stock {
 		this.adid = adid;
 		this.goodcount = goodcount;
 	}
+	public Stock( int gid, int adid, int goodcount) {
+		super();
+	
+		this.gid = gid;
+		this.adid = adid;
+		this.goodcount = goodcount;
+	}
 
 	public int getId() {
 		return id;

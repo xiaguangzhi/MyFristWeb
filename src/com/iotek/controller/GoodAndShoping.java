@@ -61,14 +61,13 @@ public class GoodAndShoping extends HttpServlet {
 			System.out.println(userInfo.toString());
 
 			// 跳转到输入密码完成订单页面
-			System.out.println("妈的");
+			
 			response.getWriter()
 					.print("<script language='javascript'>alert('前往支付');"
 							+ "	window.location.href='pages/pay.jsp';</script>");
 
 		} else {
 			// 当用户没有登录时弹出请先登录 跳转到登录页面 用户登录后在跳转到该servlet
-			System.out.println("妈的");
 			response.getWriter()
 					.print("<script language='javascript'>alert('请先登录');"
 							+ "	window.location.href='pages/userLogin.jsp';</script>");

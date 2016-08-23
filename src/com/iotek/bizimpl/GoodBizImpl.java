@@ -92,4 +92,10 @@ public class GoodBizImpl implements GoodBiz {
 		return goodDao.selectGoodInfo(id);
 	}
 
+	@Override
+	public Good selectGood(int id) {
+		
+		return goodDao.selectGoods(id);
+	}
+
 }

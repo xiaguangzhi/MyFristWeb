@@ -1,7 +1,5 @@
 package com.iotek.bizimpl;
 
-import java.util.List;
-
 import com.iotek.biz.StockBiz;
 import com.iotek.dao.StockDao;
 import com.iotek.dao.impl.StockDaoImpl;
@@ -14,22 +12,30 @@ public class StockBizImpl implements StockBiz{
 	}
 	@Override
 	public int  selectStock(int goodid) {
-		List<Stock> selectStock = stockdao.selectStock(goodid);
-		int stockGoodCount=0;
-		for (Stock stock : selectStock) {
-			stockGoodCount+=stock.getGoodcount();
+		Stock stock = stockdao.selectStock(goodid);
+		if (stock!=null) {
+			return stock.getGoodcount();
 		}
-		return stockGoodCount;
+		 
+	
+		return 0;
 	}
 	@Override
-	public boolean updateGoodCount(int num, int goodid) {
-		List<Stock> selectStock = stockdao.selectStock(goodid);
-			for (Stock stock : selectStock) {
-				if (stock.getGoodcount()>0) {
-					return stockdao.updateGoodCount(stock.getId(),num);
-				}
-			}
+	public boolean updateGoodCount(Stock stock) {
+		
+		return stockdao.updateGoodCount(stock);
+	}
+	@Override
+	public boolean selectStocks(int goodid) {
+		if (stockdao.selectStock(goodid)!=null) {
+			return true;
+		}
 		return false;
+	}
+	@Override
+	public boolean addStock(Stock stock) {
+		
+		return stockdao.addStock( stock);
 	}
 
 }
